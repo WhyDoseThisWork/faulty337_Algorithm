@@ -8,7 +8,7 @@ public class _2588 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int firstNum = Integer.parseInt(br.readLine());
         String secondNumStr = br.readLine();
-        int[] secondNum = Arrays.stream(secondNumStr.split("")).mapToInt(Integer::parseInt).toArray();;
+        int[] secondNum = Arrays.stream(secondNumStr.split("")).mapToInt(Integer::parseInt).toArray();
         System.out.println(firstNum * secondNum[2]);
         System.out.println(firstNum * secondNum[1]);
         System.out.println(firstNum * secondNum[0]);
