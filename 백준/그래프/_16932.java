@@ -1,3 +1,5 @@
+package 백준.그래프;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -8,7 +10,7 @@ import java.util.StringTokenizer;
 
 
 
-public class Main {
+public class _16932 {
     //모양 만들기
     static int N, M;
     static int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
