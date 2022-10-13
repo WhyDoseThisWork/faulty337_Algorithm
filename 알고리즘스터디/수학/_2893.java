@@ -9,24 +9,17 @@ public class _2893 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-        int five = N/5;
-        int three = (N%5)/3;
-        while(N%((five*5) + (three*3)) != 0){
-            five--;
-            if(five == 0){
-                three = N/3;
-            }else{
-                three = (N-(five*5))/3;
-            }
-            if(five < 0){
-                break;
-            }
-        }
-        if(five < 0){
-            System.out.println(-1);
+        int answer = 0;
+        if(N%5 == 0){
+            answer = N/5;
+        }else if(N == 4 || N == 7){
+            answer = -1;
         }else{
-            System.out.println(five + three);
+            answer += N/5;
+            answer += (N%5)/3;
+            answer += (N%5)%3;
         }
+        System.out.println(answer);
     }
 
 }

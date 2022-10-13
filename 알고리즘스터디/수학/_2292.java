@@ -11,16 +11,11 @@ public class _2292 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int roomNum = Integer.parseInt(br.readLine());
         int temp = (int)Math.ceil((double)(roomNum-1)/ 6); //double변환하지 않을 시 그냥 int연산이되어 올림이 제대로 안됨
-        
-        int distence = 0;
-        int i = 1;
-
-        while(temp > distence){
-            distence += i++;
+        int answer = (int)Math.sqrt(temp*2);
+        if(temp*2 - (int)Math.pow(answer, 2) > answer){
+            answer++;
         }
-
-        System.out.println(i);
-        
+        System.out.println(answer+1);
     }
 
 }

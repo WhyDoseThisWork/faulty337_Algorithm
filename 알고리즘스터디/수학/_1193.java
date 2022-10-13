@@ -11,17 +11,19 @@ public class _1193 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int X = Integer.parseInt(br.readLine());
 
-        int distence = 0;
-        int i = 0;
-        while(distence < X){
-            distence += i++;
+        int i = (int)Math.sqrt(X*2);
+        if(X*2 - (int)Math.pow(i, 2) > i){
+            i++;
         }
+        i--;
+        int distence = (1+i)*i/2;
         
-        int dif = X - (distence - (i -1));
-        if((i-1)%2 == 1){
-            System.out.println((i-1) - (dif-1) + "/" + dif);
+        int dif = X - distence-1;
+        //위 연산은 while문 통과시 이미 다음겹을 보고있기 때문에 보정이 필요
+        if((i)%2 == 0){
+            System.out.println((i - dif +1)+ "/" + (1 + dif));
         }else{
-            System.out.println( dif + "/" + ((i-1)-(dif-1)));
+            System.out.println( (1 + dif) + "/" + (i - dif+1));
         }
 
         
