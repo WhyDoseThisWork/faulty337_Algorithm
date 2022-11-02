@@ -3,8 +3,8 @@ class CirQueue {
     int front = 0, rear = 0;
     int[] q;
 
-    public CirQueue(int size){
-        this.size = size+1;
+    CirQueue(int size){
+        this.size = size;
         this.q = new int[size+1];
     }
 
@@ -12,16 +12,23 @@ class CirQueue {
         return front == rear;
     }
 
-    public void push(int value){
-        
-        q[rear] = value;
-        rear = (rear+1)%size;
+    public int size(){
+        if(front > rear){
+            return (size - front) + rear;
+        }else{
+            return rear - front;
+        }
+    }
+
+    public void push(int data){
+        q[rear%size] = data;
+        rear = (rear+1)%(size+1);
     }
 
     public int pop(){
-        int result = q[front%size];
-        front = (front+1)%size;
-        return result;
+        int data = q[front%size];
+        front = (front+1)%(size+1);
+        return data;
     }
 
 }
