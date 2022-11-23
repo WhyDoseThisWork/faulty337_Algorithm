@@ -1,7 +1,7 @@
 public class 신규_아이디_추천 {
     public static void main(String[] args) throws Exception{
         String s = "abcdefghijklmn.p";
-        System.out.println(solution(s));
+        System.out.println(solution2(s));
     }
     public static String solution(String new_id) {
 
@@ -41,5 +41,25 @@ public class 신규_아이디_추천 {
             s = s.substring(0, s.length()-1);
         }
         return s;
+    }
+
+    public static String solution2(String new_id){
+        String answer = "";
+        
+        answer = new_id.toLowerCase()
+            .replaceAll("[^-_.a-z0-9]","")
+            .replaceAll("[.]{2,}", ".")
+            .replaceAll("^[.]|[.]$", "");
+        System.out.println(answer);
+        if(answer.length() >= 16){
+            answer = answer.substring(0, 15);
+        }
+        if(answer.isEmpty()){
+            answer += 'a';
+        }
+        answer = answer.replaceAll("^[.]|[.]$", "");
+        if(answer.length() < 3)
+        answer += (""+answer.charAt(answer.length()-1)).repeat(3-answer.length());
+        return answer;
     }
 }
