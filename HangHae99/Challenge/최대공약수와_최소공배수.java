@@ -8,14 +8,8 @@ public class 최대공약수와_최소공배수 {
     }
     public static int[] solution(int n, int m) {
         
-        int b, s;
-        if(n>m){
-            b = n;
-            s = m;
-        }else{
-            b = m;
-            s = n;
-        }
+        int b = Math.max(n, m);
+        int s = Math.min(n, m);
         int r = 1;
         while(r != 0){ //유클리드 호제법
             r = b%s;

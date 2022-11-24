@@ -1,3 +1,5 @@
+package 프로그래머스;
+
 import java.util.StringTokenizer;
 
 public class k진수에서_소수_개수_구하기 {

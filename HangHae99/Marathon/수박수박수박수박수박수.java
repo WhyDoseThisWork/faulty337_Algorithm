@@ -1,3 +1,7 @@
+package HangHae99.Marathon;
+
+
+
 public class 수박수박수박수박수박수 {
     public static void main(String[] args) throws Exception{
         System.out.println(solution(3));

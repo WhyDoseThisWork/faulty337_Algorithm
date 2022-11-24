@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class _2016 {
     public static void main(String[] args) throws Exception{
         System.out.println(solution(11, 27));

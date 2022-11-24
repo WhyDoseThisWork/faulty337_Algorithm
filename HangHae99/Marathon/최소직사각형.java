@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 
 
 public class 최소직사각형 {

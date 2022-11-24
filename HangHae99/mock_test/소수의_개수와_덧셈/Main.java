@@ -1,4 +1,4 @@
-package HangHae99.소수의_개수와_덧셈;
+package HangHae99.mock_test.소수의_개수와_덧셈;
 
 import java.util.Arrays;
 import java.util.TreeSet;

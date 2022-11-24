@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 
 
 public class 하샤드_수 {

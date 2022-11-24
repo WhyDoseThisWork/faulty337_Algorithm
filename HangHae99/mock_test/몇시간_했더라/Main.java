@@ -1,4 +1,4 @@
-package HangHae99.몇시간_했더라;
+package HangHae99.mock_test.몇시간_했더라;
 
 public class Main {
     public int solution(int[] arr1, int[] arr2) {

@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 시저_암호 {
     public static void main(String[] args) {
         System.out.println(solution("a B z", 4));

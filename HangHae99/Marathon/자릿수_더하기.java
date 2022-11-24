@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 자릿수_더하기 {
     public static void main(String[] args) throws Exception{
 

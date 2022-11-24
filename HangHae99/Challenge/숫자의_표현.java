@@ -4,7 +4,10 @@ public class 숫자의_표현 {
     public static void main(String[] args) throws Exception{
         String str = "2 3 4 1";
         Solution s = new Solution();
-        System.out.println(s.solution(15));
+        for(int i = 0; i < 100; i++){
+            System.out.println(i + " : " + s.solution(i));
+        }
+        
     }
     
     static class Solution {

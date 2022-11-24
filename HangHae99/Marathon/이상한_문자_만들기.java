@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 이상한_문자_만들기 {
         public static void main(String[] args) throws Exception{
         String s = "try hello world";

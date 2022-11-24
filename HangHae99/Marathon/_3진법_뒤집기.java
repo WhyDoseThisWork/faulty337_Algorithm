@@ -1,3 +1,6 @@
+package HangHae99.Marathon;
+
+
 public class _3진법_뒤집기 {
     public static void main(String[] args) {
         System.out.println(solution(125));

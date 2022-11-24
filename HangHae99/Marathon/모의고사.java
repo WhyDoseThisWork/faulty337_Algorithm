@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 모의고사 {
     public static void main(String[] args) throws Exception{
         // int n[] = {1, 1, 3, 3, 0, 1, 1};

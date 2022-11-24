@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 신규_아이디_추천 {
     public static void main(String[] args) throws Exception{
         String s = "abcdefghijklmn.p";
@@ -46,10 +48,7 @@ public class 신규_아이디_추천 {
     public static String solution2(String new_id){
         String answer = "";
         
-        answer = new_id.toLowerCase()
-            .replaceAll("[^-_.a-z0-9]","")
-            .replaceAll("[.]{2,}", ".")
-            .replaceAll("^[.]|[.]$", "");
+        answer = new_id.toLowerCase().replaceAll("[^-_.a-z0-9]","").replaceAll("[.]{2,}", ".").replaceAll("^[.]|[.]$", "");
         System.out.println(answer);
         if(answer.length() >= 16){
             answer = answer.substring(0, 15);

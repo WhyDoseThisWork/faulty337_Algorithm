@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 public class 로또의_최고_순위와_최저_순위 {
     public static void main(String[] args) throws Exception{
         // int n[] = {1, 1, 3, 3, 0, 1, 1};

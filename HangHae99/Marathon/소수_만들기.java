@@ -1,3 +1,5 @@
+package HangHae99.Marathon;
+
 import java.util.Arrays;
 
 public class 소수_만들기 {
